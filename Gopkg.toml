@@ -36,3 +36,6 @@
 [[constraint]]
   branch = "master"
   name = "github.com/Augustr96/unifiedproto"
+[[constraint]]
+  name = "github.com/sirupsen/logrus"
+  version = "1.3.0"

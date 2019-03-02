@@ -8,7 +8,7 @@ import (
 	"github.com/Augustr96/unifiedproto/goout/utils"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"google.golang.org/grpc"
-	"log"
+	"github.com/Augustr96/PexelsClient/log"
 	"net"
 	"net/http"
 	"os"
@@ -54,6 +54,7 @@ func main() {
 
 	pexels.RegisterPexelsServer(s, server)
 
+	log.Info("starting server...")
 	if err := s.Serve(lis); err != nil {
 		fmt.Println(err)
 	}
